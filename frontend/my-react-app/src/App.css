@@ -1,0 +1,142 @@
+/* General App Styles */
+.App {
+  font-family: 'Roboto', sans-serif; /* Using a more modern font */
+  text-align: center;
+  background-color: #f4f6f9; /* Light background color */
+  padding: 20px;
+}
+
+.portfolio {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h2 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Portfolio Assets */
+.asset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.asset:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.asset .asset-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.asset .asset-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.asset .asset-info h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Total Portfolio Value */
+.total-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #2980b9;
+}
+
+/* Add Asset Form */
+.add-asset {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.add-asset input {
+  margin: 5px;
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.add-asset button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-asset button:hover {
+  background-color: #2ecc71;
+}
+
+.add-asset input:focus,
+.add-asset button:focus {
+  outline: none;
+}
+
+/* Charts */
+.chart-container {
+  margin-top: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 10px;
+  }
+
+  .add-asset {
+    flex-direction: column;
+  }
+
+  .add-asset input,
+  .add-asset button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .asset {
+    flex-direction: column;
+  }
+}
